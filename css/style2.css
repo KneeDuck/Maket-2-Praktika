@@ -188,16 +188,17 @@ footer .podmylsya{
   
   .overlay-content {
     position: relative;
-    top: 25%;
-    height: 40%;
-    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+    max-width: 590px;
     text-align: center;
-    margin-top: 30px;
-    margin-left: 35%;
     border-radius: 30px;
     border-color: black;   
     background-color: white;
     filter: drop-shadow(0 0 2.05rem rgb(206, 206, 206));   
+    padding: 37px;
   }
 
    .overlay-content .primary {
@@ -230,14 +231,17 @@ footer .podmylsya{
     display: flex;
     flex-direction: column;
     width: 90%;
-    margin-left: 5%;
+    /* padding-left: 5%; */
     gap: 15px;
     color:rgba(4, 26, 63, 0.4); 
+    margin: 0 auto;
   }
 
   .overlay-content .inputs input{
+    width: 100%;
     height: 58px;
     font-family: 'Montserrat Alternates';
+    padding-left: 20px;
   }
 
   .overlay-content .inputs .selecteto{
@@ -274,11 +278,6 @@ footer .podmylsya{
     font-size: 60px;
   }
 
-  @media screen and (max-width: 1999px) {
-    .overlay-content{
-        height: 47%;
-    }
-  }
 
 @media screen and (max-width: 1800px) {
     :root{
@@ -356,7 +355,7 @@ footer .podmylsya{
     }
 
       
-  .overlay-content {
+  /* .overlay-content {
     position: relative;
     top: 25%;
     height: 60%;
@@ -368,6 +367,6 @@ footer .podmylsya{
     border-color: black;   
     background-color: white;
     filter: drop-shadow(0 0 2.05rem rgb(206, 206, 206));   
-  }
+  } */
 
 }
