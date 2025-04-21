@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style2.css">
+    <link rel="stylesheet" href="./lib/swiper-bundle.min.css">
+    <script src="./lib/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <title>SuperSuit</title>
+</head>
+<body>
+  
+    <main>
+        <header>
+            <div class="container">
+                <nav>
+                    <ul>
+                        <h3 onclick="location.href = 'index.html';"><span style="color: #FFCA33;">Super<span style="color: #041A3F;">Suit</span></span></h3>
+                        <h3>+375 29 351-27-40</h3> 
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </main>
+    <section id="demonstration">
+        <div class="container">
+            <div class="gorizontal">
+                <div class="littlestrip"> 
+                    <img src="./img/lilvedro.png" alt="kartinka ne gruzit umnnik">
+                    <img src="./img/lilgoolova.png" alt="kartinka ne gruzit umnnik">
+                    <img src="./img/lilback.png" alt="kartinka ne gruzit umnnik">
+                    <img src="./img/lilnudes.png" alt="kartinka ne gruzit umnnik">
+                    <img src="./img/lilvirgin.png" alt="kartinka ne gruzit umnnik">
+                </div>
+                <div class="bigveder">
+                    <img src="./img/SuperVedro2.png" alt="kartinka ne gruzit umnnik">
+                </div>
+            </div>
+                <div class="bigstrip"> 
+                    <h3>Дарт-Вейдер</h3>
+                    <p>0123238313</p>
+                    <h2>1500₽/сутки</h2>
+                    <h1>Комплектация:</h1>
+                    <span>Комбенизон, шлем, плащ, жилет</span>
+                    <h1>Размер:</h1>
+                    <span>48-52</span>
+                    <button class="primary" onclick="openNav()">Подобрать костюм</button>
+                    <p class="bogie">0123238313</p>
+                </div>   
+            
+        </div>
+    </section>
+    <section id="description">
+        <div class="container">
+            <h2>Описание</h2>
+            <span>Дарт Ве́йдер, также известный под своим настоящим именем как Э́накин Скайуо́кер — центральный персонаж первых шести эпизодов саги «Звёздные войны». Также появляется в фильме «Изгой-один».</span>
+            <span>Персонаж придуман Джорджем Лукасом. По одной из версий, имя Энакин скопировано с фамилии друга Лукаса — режиссёра Кена Эннакина[3], однако сам Лукас это опроверг на следующий же день после смерти Кена[4].</span>
+            <span>Многие Лорды Ситхов добавляли приставку «Дарт» к своим именам, и постепенно из-за количества «Дартов» она стала ассоциироваться с тёмной стороной Силы. Также эта приставка бралась как символ отказа от прежней жизни. Примером этого служит и Энакин Скайуокер, ставший Дартом Вейдером. Однако, само происхождение слова до сих пор остаётся неопределённым: большинство считает, что «Дарт» (англ. Darth) — это просто сокращение от «Тёмный лорд ситхов» (англ. Dark Lord of the Sith), но существуют теории, предполагающие более глубокую интерпретацию. </span>
+        </div> 
+    </section>
+    <footer>
+        <div class="container">
+            <div class="obosralsya">
+                <span><span style="color: #FFCA33;">Super<span style="color: #041A3F;">Suit</span></span></span>
+            </div>
+            <div class="podmylsya">
+                <span>+375 29 351-27-40</span>
+            </div>
+        </div>
+    </footer>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <form action="/url" method="GET">
+                <div class="textos">
+                    <span></span>
+                    <h2>Аренда костюма “Дарт Вейдер”</h2>
+                    <p>Пожалуйста, укажите ваши контактные данные, чтобы мы забронировали костюм на ваше имя</p>
+                </div>
+                <div class="inputs">
+                    <input type="text" placeholder="    Как вас зовут?" required>
+                    <input type="text" placeholder="    Какой у вас номер телефона?" required>
+                    <div class="selecteto">    
+                        <select name="rentlength" id="rentlength" required>
+                            <option value="">  На сколько дней арендуете?</option>
+                            <option value="1">  1 день</option>
+                            <option value="2">  2 дня</option>
+                            <option value="3">  3 дня</option>
+                            <option value="4">  4 дня</option>
+                            <option value="5">  5 дней</option>
+                            <option value="6">  6 дней</option>
+                            <option value="7">  Неделя</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="primary">Submit</button> 
+                    
+                </div> 
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+</body>
+
+
+

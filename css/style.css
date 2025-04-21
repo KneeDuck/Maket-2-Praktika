@@ -27,6 +27,7 @@ body {
     background-color: #EFF5FF;
     overflow-x: hidden;
     background-image: url(../img/BgPattern.svg);
+    min-height: 100%;
 }
 
 header {
@@ -36,6 +37,7 @@ header {
     margin-top: 11px;
     justify-content: space-between;
 }
+
 header nav {
     width: 100%;
 }
@@ -47,8 +49,6 @@ main .banner .container nav {
     justify-content: space-between;
     list-style: none;
 }
-
-
 
 main  {
     display: flex;
@@ -63,6 +63,7 @@ main  {
     /* padding-bottom: 200px; */
     transform: translateX(448px);
 }
+
 main  .container {
     transform: translateX(-448px);
     display: flex;
@@ -101,6 +102,7 @@ main .primary {
     font-family: 'Montserrat Alternates';
     font-weight: bold;
 }
+
 main .primary:hover {
     opacity: 0.8;
 }
@@ -203,8 +205,19 @@ footer .podmylsya{
     font-weight: bold;
 }
 
-
 @media screen and (max-width: 2150px) {
+    main{
+        transform: translateX(0px);
+        border-radius: 0px;
+        
+    }
+    main .container{
+        transform: translateX(0px);
+        gap: 0px;
+    }
+}
+
+@media screen and (max-width: 1800px) {
 
     #costumes .container .stolbik .lineeyka{
         flex-direction: column;
@@ -222,7 +235,8 @@ footer .podmylsya{
         align-items: center;
     }
     main .banner .primary{
-        margin-left: 15px;
+        margin-left: -0px;
+        align-self: center;
     }
 
     main .container{
@@ -231,7 +245,7 @@ footer .podmylsya{
     }
     
     main .banneryap h1{
-        margin-left: -10px;
+        margin-left: -40px;
         font-size: 26px;
         width: 150%;
     }
@@ -244,5 +258,18 @@ footer .podmylsya{
     
     nav ul h3{
         font-size: 16px;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer .obosralsya {
+        font-size: 18px;
+        align-self: center;
+    }
+    footer .podmylsya{
+        font-size: 18px;
+        align-self: center;
     }
 }
